@@ -1,29 +1,38 @@
 Layer[] layers;
 
+/*Seaweed testSeaweed;
+Submarine testSub;*/
+
 void setup () {
   size(445, 720);
     
   JSONObject config = loadJSONObject("config.json");
-  JSONObject dataFrames = config.getJSONObject("frames");
-  JSONArray dataFrameHeights = dataFrames.getJSONArray("height");
-  JSONArray dataFrameVariations = dataFrames.getJSONArray("variation");
-  JSONArray dataFrameSpacings = dataFrames.getJSONArray("spacing");
-  JSONArray dataFrameBrightnesses = dataFrames.getJSONArray("brightness");
-  // TODO : Instead of spacing + brightness, have a distance and computes spacing + brightness from distance
+  JSONArray dataLayers = config.getJSONArray("layers");
+  JSONObject dataLights = config.getJSONObject("raylight");
   
-  int frameCount = dataFrameHeights.size();
+  int frameCount = dataLayers.size();
   layers = new Layer[frameCount];
-  for (int i = 0; i < frameCount; i++)
-    layers[i] = new Layer(dataFrameHeights.getFloat(i)
-      , dataFrameVariations.getInt(i)
-      , dataFrameSpacings.getInt(i)
-      , dataFrameBrightnesses.getFloat(i));
+  for (int i = 0; i < frameCount; i++) {
+    layers[i] = new Layer(dataLayers.getJSONObject(i));
+    layers[i].setLight(dataLights);
+  }
+   /*   testSeaweed = new Seaweed();
+   testSB = new SubmarineBase(3, 200);*/
 }
 
 void draw () {
   drawBackground();
   for (int i = layers.length-1; i >= 0; i--)
     layers[i].draw();
+    
+  /*pushMatrix();
+  translate(width/2, height);
+  testSeaweed.draw();
+  popMatrix();
+  pushMatrix();
+  translate(0, -300);
+  testSub.draw();
+  popMatrix();*/
 }
 
 void drawBackground () {

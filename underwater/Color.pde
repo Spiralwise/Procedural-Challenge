@@ -1,4 +1,11 @@
 final color COLOR_SEA_LIGHT = #73B4E8;
 final color COLOR_SEA_DARK = #0A0D1A;
-final color COLOR_SEABED = #675D52;
+final color COLOR_SEABED = #1A1917;
 final color COLOR_BLACK = #000000;
+final color COLOR_FISH = #163629;
+final color COLOR_SEAWEED = #40793D;
+final color COLOR_SUBBASE = #B1C1CE;
+final color COLOR_SUBBASE_SHADOW = #586167;
+final color COLOR_SUBBASE_GLASS = #A6DFFC;
+final color COLOR_SUBBASE_GLASS_SHADOW = #567381;
+final color COLOR_SUBBASE_TREE = #386F35;

@@ -1,8 +1,48 @@
 {
-	"frames": {
-			"height": [0.1, 0.25, 0.4],
-			"variation": [15, 20, 30],
-			"spacing": [20, 10, 8],
-			"brightness": [1.0, 0.7, 0.3]
-		}
+	"layers": [
+			{
+				"height": 0.1,
+				"distance": 0.0,
+				"variation": 15,
+				"fish_density": 0.05,
+				"veg_density": 0.05
+			},
+			{
+				"height": 0.25,
+				"distance": 0.2,
+				"variation": 20,
+				"fish_density": 0.1,
+				"veg_density": 0.02,
+				"subbase": {
+					"floor": {
+						"min": 2,
+						"max": 8
+					},
+					"width": {
+						"min": 80,
+						"max": 160
+					}
+				}
+			},
+			{
+				"height": 0.4,
+				"distance":0.8,
+				"variation": 30,
+				"fish_density": 0.4,
+				"veg_density": 0.01
+			}
+		],
+	"raylight": {
+		"color": [196, 255, 241, 64],
+		"number": {
+      "min": 2,
+      "max": 5
+    },
+    "width": {
+      "min":20,
+      "max": 50
+    },
+		"depth": 0.8,
+		"slope": 0.3
+	}
 }
