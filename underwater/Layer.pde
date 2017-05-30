@@ -43,10 +43,10 @@ class Layer {
     groundShape.vertex(width, height);
     groundShape.vertex(0, height);
     groundShape.endShape(CLOSE);
-    
+
+    setFishBand(settings.getFloat("fish_density"));
     if (!settings.isNull("subbase"))
       setSubmarineBase(settings.getJSONObject("subbase"));
-    setFishBand(settings.getFloat("fish_density"));
   }
   
   public void draw () {
