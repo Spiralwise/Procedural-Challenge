@@ -1,7 +1,7 @@
-# Procedural Challenges from subreddit /r/proceduralgeneration
-Hi there! Welcome to my repository for all good procedural challenges from the subreddit of /r/proceduralgeneration.
+# Procedural Challenges
+Hi there! Welcome to my repository for all good procedural challenges from [the subreddit of /r/proceduralgeneration](https://www.reddit.com/r/proceduralgeneration).
 
-I'm very interesting into computer graphics and every topics around video games and simulation. So procedural generation is one of my favorite topics. Redditers from /r/proceduralgeneration proposed each month a challenge for procedural generated demo. This is a good opportunity for me to learn more (not only in procedual generation but even in programming) and master procedual generation and computer graphic programming.
+I'm very interesting into computer graphics and every topics around video games and simulation. So procedural generation is one of my favorite topics. Redditers from /r/proceduralgeneration proposed each month a challenge for a procedural generated demo. The subject is generally pretty broad and there is a large diversity of works. This is a good opportunity for me to learn more (not only in procedural generation but even in programming) and master procedural generation and computer graphic programming.
 
 Take a tour. This repository contains one folder by challenge.
 
